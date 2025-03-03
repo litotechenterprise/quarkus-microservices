@@ -28,7 +28,7 @@ public class NumberResource {
     public IsbnNumbers hello() {
         IsbnNumbers isbnNumbers = new IsbnNumbers();
         isbnNumbers.isbn13 = "13-"+ new Random().nextInt(100_000_000);
-        isbnNumbers.isbn10 = "13-"+ new Random().nextInt(100_000);
+        isbnNumbers.isbn10 = "10-"+ new Random().nextInt(100_000);
         isbnNumbers.generatedDate = Instant.now();
 
         logger.info("Generating ISBN number...");
